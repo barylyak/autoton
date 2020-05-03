@@ -1,0 +1,359 @@
+/*All*/
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+p, h1, h2, h3, h4, h5, span{
+    margin: 0;
+    padding: 0;
+}
+
+/*Main section*/
+.header{
+    /*background: black;*/
+    padding-top: 20px;
+    background: url("img/bg1.jpg") no-repeat;
+    background-size: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 130px;
+    align-items: center;
+}
+.menu-item{
+    margin-right: 50px;
+
+}
+li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li a:hover{
+    color: #3949ab;
+}
+.menutext{
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 350px;
+
+}
+
+
+/*Advantages section*/
+.advantages{
+    font-family: 'Open Sans', sans-serif;
+    background-color:white;
+}
+.advantages-block{
+    padding-top: 50px;
+   text-align: center;
+}
+.advantages-title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+.advantages-text{
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+.advantages-text:before{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #3949ab;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.advantages-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#cards-icon{
+    font-size: 50px;
+}
+.advantages-card{
+    max-width: 35%;
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.advantages-card:hover{
+    box-shadow: 60px -16px  #111;
+}
+.card-title{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.card-text{
+font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    line-height: 1.8em;
+}
+
+/*Our servises*/
+
+.ourservises{
+    background-color: #a9b6f0;
+}
+.servises-block{
+    padding-top: 50px;
+    text-align: center;
+}
+.servises-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.servises-card{
+    background-color: white;
+    width: 20%;
+    padding: 20px;
+    border-radius: 10%;
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.servises-card:hover{
+background-color: #e0e0e0;
+}
+.servises-title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.servises-text{
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+#servises-icon{
+    font-size: 60px;
+    color: #111;
+    margin-bottom: 20px;
+}
+.cardservises-title{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.cardservises-text{
+    line-height: 1.4em;
+}
+
+/*Our foto*/
+.foto{
+    background-color: white;
+}
+.ourfoto-text{
+    margin-top: 40px;
+}
+.ourfoto-title{
+    font-size: 30px;
+    text-align: center;
+}
+.ourfoto-title:after{
+    content: "";
+    display: block;
+    width: 240px;
+    height: 3px;
+    background-color: #3949ab;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/*Our contact*/
+
+.contact{
+    background: url("img/bg-footer.jpg");
+    /*opacity: 70%;*/
+}
+.footer-block{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.footer-title{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+   }
+.footer-text{
+    color: white;
+    text-align: center;
+}
+.contact-icons{
+    text-align: center;
+    font-size: 50px;
+}
+.contact-icons i{
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 30px;
+    color: white;
+}
+.contact-icons i:hover{
+    color: black;
+    font-size: 53px;
+}
+.maps{
+    border-radius: 5px;
+    margin-bottom: 30px;
+ }
+
+/*Media*/
+
+@media (max-width: 1150px) {
+   .servises-card{
+       width: 35%;
+   }
+    .advantages-block{
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1000px){
+    li a{
+        font-size: 13px;
+    }
+    .menu-item{
+        margin-right: 30px;
+    }
+    .menutext{
+        padding-bottom: 300px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .menutext{
+        font-size: 15px;
+        padding-bottom: 280px;
+    }
+    .advantages-title{
+        font-size: 20px;
+    }
+    .advantages-text{
+        font-size: 15px;
+        }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    #cards-icon{
+        font-size: 40px;
+    }
+    .servises-title{
+        font-size: 20px;
+    }
+    .servises-text{
+        font-size: 15px;
+    }
+    .cardservises-title{
+        font-size: 18px;
+    }
+    .cardservises-text{
+        font-size: 13px;
+    }
+    #servises-icon{
+        font-size: 40px;
+    }
+    .ourfoto-title{
+        font-size: 20px;
+    }
+    .ourfoto-title:after{
+        width: 180px;
+    }
+    .advantages-text:before{
+        width: 160px;
+    }
+    .footer-title{
+        font-size: 20px;
+    }
+    .footer-text{
+        font-size: 15px;
+    }
+    .contact-icons{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px){
+    .menu{
+        margin-bottom: 80px;
+    }
+    .menutext{
+        font-size: 12px;
+        padding-bottom: 230px;
+    }
+    li a{
+        font-size: 10px;
+    }
+    .menu-item{
+        margin-right: 15px;
+
+    }
+    #cell{
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 576px){
+    .menutext{
+        font-size: 10px;
+        padding-bottom: 200px;
+    }
+    .servises-card{
+        width: 45%;
+    }
+    .advantages-card{
+        max-width: 50%;
+    }
+    .advantages-text{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 450px){
+    .menutext{
+        font-size: 8px;
+        padding-bottom: 130px;
+    }
+    .menu{
+        margin-bottom: 50px;
+    }
+    .servises-card{
+        width: 55%;
+    }
+}
